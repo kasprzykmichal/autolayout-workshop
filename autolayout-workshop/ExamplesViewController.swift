@@ -17,6 +17,7 @@ class ExamplesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var examples: [Example] = [
+        Example(name: "Example 1", description: "Building layout using Interface Builder")
     ]
 }
 
@@ -40,7 +41,7 @@ extension ExamplesViewController: UITableViewDataSource {
 extension ExamplesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let segueIdentifier: String = "showExample\(indexPath.row)"
+        let segueIdentifier: String = "showExample\(indexPath.row + 1)"
         performSegue(withIdentifier: segueIdentifier, sender: nil)
     }
 }

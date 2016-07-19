@@ -12,6 +12,7 @@
 		BC2A44191D3E9C33005D8AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2A44181D3E9C33005D8AB3 /* Assets.xcassets */; };
 		BC2A441C1D3E9C33005D8AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A441A1D3E9C33005D8AB3 /* LaunchScreen.storyboard */; };
 		BC2A44281D3E9C90005D8AB3 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A44271D3E9C90005D8AB3 /* ExamplesViewController.swift */; };
+		BC2A442C1D3EA097005D8AB3 /* Example1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A442B1D3EA097005D8AB3 /* Example1.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BC2A441B1D3E9C33005D8AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2A441D1D3E9C33005D8AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2A44271D3E9C90005D8AB3 /* ExamplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		BC2A442B1D3EA097005D8AB3 /* Example1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example1.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				BC2A44151D3E9C33005D8AB3 /* Main.storyboard */,
 				BC2A441A1D3E9C33005D8AB3 /* LaunchScreen.storyboard */,
+				BC2A44291D3EA075005D8AB3 /* Examples */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -92,8 +95,24 @@
 			isa = PBXGroup;
 			children = (
 				BC2A44271D3E9C90005D8AB3 /* ExamplesViewController.swift */,
+				BC2A442A1D3EA085005D8AB3 /* Examples */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BC2A44291D3EA075005D8AB3 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				BC2A442B1D3EA097005D8AB3 /* Example1.storyboard */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		BC2A442A1D3EA085005D8AB3 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +179,7 @@
 				BC2A441C1D3E9C33005D8AB3 /* LaunchScreen.storyboard in Resources */,
 				BC2A44191D3E9C33005D8AB3 /* Assets.xcassets in Resources */,
 				BC2A44171D3E9C33005D8AB3 /* Main.storyboard in Resources */,
+				BC2A442C1D3EA097005D8AB3 /* Example1.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
