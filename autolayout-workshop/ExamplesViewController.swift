@@ -20,7 +20,8 @@ class ExamplesViewController: UIViewController {
         Example(name: "Example 1", description: "Building layout using Interface Builder"),
         Example(name: "Example 2", description: "Building layout with UIStackView"),
         Example(name: "Example 3", description: "Using Size-classes"),
-        Example(name: "Example 4", description: "Creating Constraints programmatically")
+        Example(name: "Example 4", description: "Creating Constraints programmatically"),
+        Example(name: "Example 5", description: "Changing Constraints")
     ]
 }
 
