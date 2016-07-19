@@ -12,6 +12,8 @@
 		BC1B58B51D3EB6CE00340F36 /* Example4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B58B41D3EB6CE00340F36 /* Example4ViewController.swift */; };
 		BC1B58B71D3EC82D00340F36 /* Example5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B58B61D3EC82D00340F36 /* Example5ViewController.swift */; };
 		BC1B58B91D3EC86200340F36 /* Example5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1B58B81D3EC86200340F36 /* Example5.storyboard */; };
+		BC1B58BD1D3ED35600340F36 /* Example6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B58BC1D3ED35600340F36 /* Example6ViewController.swift */; };
+		BC1B58BF1D3ED4D600340F36 /* Example6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1B58BE1D3ED4D600340F36 /* Example6.storyboard */; };
 		BC2A44121D3E9C33005D8AB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A44111D3E9C33005D8AB3 /* AppDelegate.swift */; };
 		BC2A44171D3E9C33005D8AB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A44151D3E9C33005D8AB3 /* Main.storyboard */; };
 		BC2A44191D3E9C33005D8AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2A44181D3E9C33005D8AB3 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		BC1B58B41D3EB6CE00340F36 /* Example4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example4ViewController.swift; sourceTree = "<group>"; };
 		BC1B58B61D3EC82D00340F36 /* Example5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example5ViewController.swift; sourceTree = "<group>"; };
 		BC1B58B81D3EC86200340F36 /* Example5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example5.storyboard; sourceTree = "<group>"; };
+		BC1B58BC1D3ED35600340F36 /* Example6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example6ViewController.swift; sourceTree = "<group>"; };
+		BC1B58BE1D3ED4D600340F36 /* Example6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example6.storyboard; sourceTree = "<group>"; };
 		BC2A440E1D3E9C33005D8AB3 /* autolayout-workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "autolayout-workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2A44111D3E9C33005D8AB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2A44161D3E9C33005D8AB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				BC1B58B01D3EB02F00340F36 /* Example3.storyboard */,
 				BC1B58B21D3EB6B300340F36 /* Example4.storyboard */,
 				BC1B58B81D3EC86200340F36 /* Example5.storyboard */,
+				BC1B58BE1D3ED4D600340F36 /* Example6.storyboard */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				BCDF9DFD1D3EA99900703493 /* Example2ViewController.swift */,
 				BC1B58B41D3EB6CE00340F36 /* Example4ViewController.swift */,
 				BC1B58B61D3EC82D00340F36 /* Example5ViewController.swift */,
+				BC1B58BC1D3ED35600340F36 /* Example6ViewController.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2A441C1D3E9C33005D8AB3 /* LaunchScreen.storyboard in Resources */,
+				BC1B58BF1D3ED4D600340F36 /* Example6.storyboard in Resources */,
 				BC1B58B11D3EB02F00340F36 /* Example3.storyboard in Resources */,
 				BC1B58B31D3EB6B300340F36 /* Example4.storyboard in Resources */,
 				BC1B58B91D3EC86200340F36 /* Example5.storyboard in Resources */,
@@ -219,6 +226,7 @@
 				BC2A44281D3E9C90005D8AB3 /* ExamplesViewController.swift in Sources */,
 				BC1B58B51D3EB6CE00340F36 /* Example4ViewController.swift in Sources */,
 				BCDF9DFE1D3EA99900703493 /* Example2ViewController.swift in Sources */,
+				BC1B58BD1D3ED35600340F36 /* Example6ViewController.swift in Sources */,
 				BC1B58B71D3EC82D00340F36 /* Example5ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
