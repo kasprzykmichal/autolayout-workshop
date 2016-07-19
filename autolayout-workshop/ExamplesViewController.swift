@@ -18,7 +18,8 @@ class ExamplesViewController: UIViewController {
     
     private var examples: [Example] = [
         Example(name: "Example 1", description: "Building layout using Interface Builder"),
-        Example(name: "Example 2", description: "Building layout with UIStackView")
+        Example(name: "Example 2", description: "Building layout with UIStackView"),
+        Example(name: "Example 3", description: "Using Size-classes")
     ]
 }
 
