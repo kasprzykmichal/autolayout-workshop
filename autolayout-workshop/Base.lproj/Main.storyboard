@@ -69,6 +69,7 @@
                         <segue destination="aI3-tc-0BQ" kind="show" identifier="showExample4" id="4Jc-E6-xhG"/>
                         <segue destination="4Qm-jl-2tU" kind="show" identifier="showExample5" id="40q-Rh-Az8"/>
                         <segue destination="n4B-0Z-9el" kind="show" identifier="showExample6" id="M6W-VQ-iBF"/>
+                        <segue destination="JZ8-qy-cO2" kind="show" identifier="showExample7" id="hCh-vR-crq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -122,6 +123,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iwl-0k-xkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1506" y="735"/>
+        </scene>
+        <!--Example7-->
+        <scene sceneID="GDF-iG-rmg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Example7" id="JZ8-qy-cO2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOj-k5-kDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506" y="782"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eOd-NK-0fD">
