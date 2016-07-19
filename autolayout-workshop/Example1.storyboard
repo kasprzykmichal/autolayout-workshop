@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,14 +18,53 @@
                     <view key="view" contentMode="scaleToFill" id="FXc-aE-1HN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETu-4O-STC">
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAw-a7-kgS">
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oA-qF-mDF">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRg-kB-gZa">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuY-NV-eLm">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xAw-a7-kgS" firstAttribute="leading" secondItem="FXc-aE-1HN" secondAttribute="leadingMargin" constant="4" id="Fxb-1L-4Sw"/>
+                            <constraint firstItem="ETu-4O-STC" firstAttribute="height" secondItem="cuY-NV-eLm" secondAttribute="height" id="GVp-2E-wzW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JRg-kB-gZa" secondAttribute="trailing" id="HzQ-Ur-CZ5"/>
+                            <constraint firstItem="xAw-a7-kgS" firstAttribute="top" secondItem="ETu-4O-STC" secondAttribute="bottom" constant="8" id="K7j-L8-2Pi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ETu-4O-STC" secondAttribute="trailing" id="OI6-B9-D36"/>
+                            <constraint firstItem="0oA-qF-mDF" firstAttribute="leading" secondItem="FXc-aE-1HN" secondAttribute="leadingMargin" constant="4" id="Vom-Zn-JUc"/>
+                            <constraint firstItem="ETu-4O-STC" firstAttribute="leading" secondItem="cuY-NV-eLm" secondAttribute="trailing" constant="8" id="ZiJ-IX-HcI"/>
+                            <constraint firstItem="ix9-Sn-tEq" firstAttribute="top" secondItem="0oA-qF-mDF" secondAttribute="bottom" constant="8" id="aNu-fC-NfF"/>
+                            <constraint firstItem="cuY-NV-eLm" firstAttribute="top" secondItem="xWu-HS-kfF" secondAttribute="bottom" constant="8" id="hrA-bD-apK"/>
+                            <constraint firstItem="xAw-a7-kgS" firstAttribute="height" secondItem="cuY-NV-eLm" secondAttribute="height" id="mzr-hV-Upe"/>
+                            <constraint firstItem="ETu-4O-STC" firstAttribute="top" secondItem="xWu-HS-kfF" secondAttribute="bottom" constant="8" id="nAG-Zw-KEs"/>
+                            <constraint firstItem="JRg-kB-gZa" firstAttribute="top" secondItem="xAw-a7-kgS" secondAttribute="bottom" constant="8" id="nvj-Fz-nai"/>
+                            <constraint firstItem="0oA-qF-mDF" firstAttribute="top" secondItem="xAw-a7-kgS" secondAttribute="bottom" constant="8" id="rF1-3K-Eul"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xAw-a7-kgS" secondAttribute="trailing" id="wFk-CS-qKp"/>
+                            <constraint firstItem="JRg-kB-gZa" firstAttribute="leading" secondItem="0oA-qF-mDF" secondAttribute="trailing" constant="8" id="xMw-r1-mad"/>
+                            <constraint firstItem="cuY-NV-eLm" firstAttribute="leading" secondItem="FXc-aE-1HN" secondAttribute="leadingMargin" constant="4" id="xg0-PC-C6E"/>
+                            <constraint firstItem="ix9-Sn-tEq" firstAttribute="top" secondItem="JRg-kB-gZa" secondAttribute="bottom" constant="8" id="xmW-ie-6EB"/>
+                            <constraint firstItem="ETu-4O-STC" firstAttribute="width" secondItem="cuY-NV-eLm" secondAttribute="width" id="z2Y-d8-wyi"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yep-fh-8Cw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="159"/>
+            <point key="canvasLocation" x="132" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>
