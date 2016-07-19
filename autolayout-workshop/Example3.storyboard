@@ -18,15 +18,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ElCapitan" translatesAutoresizingMaskIntoConstraints="NO" id="DAr-JE-3E7"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ElCapitan" translatesAutoresizingMaskIntoConstraints="NO" id="DAr-JE-3E7">
+                                <variation key="heightClass=compact-widthClass=compact" image="ElCapitanLandscape"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El Capitan, Yosemite National Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6c-rK-pIA">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="California" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4d-0Q-v3U">
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="V4d-0Q-v3U" firstAttribute="centerX" secondItem="DAr-JE-3E7" secondAttribute="centerX" id="0vq-kL-QAD"/>
                             <constraint firstAttribute="trailing" secondItem="DAr-JE-3E7" secondAttribute="trailing" id="41l-6n-VWW"/>
                             <constraint firstItem="DAr-JE-3E7" firstAttribute="top" secondItem="37I-UR-MWj" secondAttribute="bottom" id="7CA-zJ-bqs"/>
+                            <constraint firstItem="V4d-0Q-v3U" firstAttribute="top" secondItem="z6c-rK-pIA" secondAttribute="bottom" constant="8" id="INx-FI-hxA"/>
+                            <constraint firstItem="z6c-rK-pIA" firstAttribute="top" secondItem="37I-UR-MWj" secondAttribute="bottom" constant="8" id="MNY-cP-jgt"/>
                             <constraint firstItem="DAr-JE-3E7" firstAttribute="bottom" secondItem="5eK-kY-raX" secondAttribute="top" id="Pep-r6-ROp"/>
                             <constraint firstItem="DAr-JE-3E7" firstAttribute="leading" secondItem="iX5-Kt-P84" secondAttribute="leading" id="Q41-uI-HOs"/>
+                            <constraint firstItem="z6c-rK-pIA" firstAttribute="centerX" secondItem="DAr-JE-3E7" secondAttribute="centerX" id="jLQ-8r-8MK"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="V4d-0Q-v3U"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0vq-kL-QAD"/>
+                                <exclude reference="INx-FI-hxA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="V4d-0Q-v3U"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0vq-kL-QAD"/>
+                                <include reference="INx-FI-hxA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </viewController>
@@ -37,5 +74,6 @@
     </scenes>
     <resources>
         <image name="ElCapitan" width="1016" height="1564"/>
+        <image name="ElCapitanLandscape" width="1718" height="1072"/>
     </resources>
 </document>
