@@ -22,6 +22,8 @@
 		BC2A441C1D3E9C33005D8AB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A441A1D3E9C33005D8AB3 /* LaunchScreen.storyboard */; };
 		BC2A44281D3E9C90005D8AB3 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A44271D3E9C90005D8AB3 /* ExamplesViewController.swift */; };
 		BC2A442C1D3EA097005D8AB3 /* Example1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2A442B1D3EA097005D8AB3 /* Example1.storyboard */; };
+		BCA3992B1D3F763700E6A94A /* Example8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3992A1D3F763700E6A94A /* Example8ViewController.swift */; };
+		BCA3992D1D3F765E00E6A94A /* Example8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA3992C1D3F765E00E6A94A /* Example8.storyboard */; };
 		BCDF9DFC1D3EA87D00703493 /* Example2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF9DFB1D3EA87D00703493 /* Example2.storyboard */; };
 		BCDF9DFE1D3EA99900703493 /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF9DFD1D3EA99900703493 /* Example2ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		BC2A441D1D3E9C33005D8AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2A44271D3E9C90005D8AB3 /* ExamplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
 		BC2A442B1D3EA097005D8AB3 /* Example1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example1.storyboard; sourceTree = "<group>"; };
+		BCA3992A1D3F763700E6A94A /* Example8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example8ViewController.swift; sourceTree = "<group>"; };
+		BCA3992C1D3F765E00E6A94A /* Example8.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example8.storyboard; sourceTree = "<group>"; };
 		BCDF9DFB1D3EA87D00703493 /* Example2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example2.storyboard; sourceTree = "<group>"; };
 		BCDF9DFD1D3EA99900703493 /* Example2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +136,7 @@
 				BC1B58B81D3EC86200340F36 /* Example5.storyboard */,
 				BC1B58BE1D3ED4D600340F36 /* Example6.storyboard */,
 				BC1B58C21D3ED7BB00340F36 /* Example7.storyboard */,
+				BCA3992C1D3F765E00E6A94A /* Example8.storyboard */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				BC1B58B61D3EC82D00340F36 /* Example5ViewController.swift */,
 				BC1B58BC1D3ED35600340F36 /* Example6ViewController.swift */,
 				BC1B58C01D3ED79E00340F36 /* Example7ViewController.swift */,
+				BCA3992A1D3F763700E6A94A /* Example8ViewController.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				BC1B58B11D3EB02F00340F36 /* Example3.storyboard in Resources */,
 				BC1B58B31D3EB6B300340F36 /* Example4.storyboard in Resources */,
 				BC1B58B91D3EC86200340F36 /* Example5.storyboard in Resources */,
+				BCA3992D1D3F765E00E6A94A /* Example8.storyboard in Resources */,
 				BC2A44191D3E9C33005D8AB3 /* Assets.xcassets in Resources */,
 				BC2A44171D3E9C33005D8AB3 /* Main.storyboard in Resources */,
 				BC1B58C31D3ED7BB00340F36 /* Example7.storyboard in Resources */,
@@ -231,6 +238,7 @@
 			files = (
 				BC2A44121D3E9C33005D8AB3 /* AppDelegate.swift in Sources */,
 				BC2A44281D3E9C90005D8AB3 /* ExamplesViewController.swift in Sources */,
+				BCA3992B1D3F763700E6A94A /* Example8ViewController.swift in Sources */,
 				BC1B58C11D3ED79E00340F36 /* Example7ViewController.swift in Sources */,
 				BC1B58B51D3EB6CE00340F36 /* Example4ViewController.swift in Sources */,
 				BCDF9DFE1D3EA99900703493 /* Example2ViewController.swift in Sources */,

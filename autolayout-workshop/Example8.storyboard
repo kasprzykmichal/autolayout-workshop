@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AFU-g3-gDF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example8 View Controller-->
+        <scene sceneID="6Tg-mk-19H">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="AFU-g3-gDF" customClass="Example8ViewController" customModule="autolayout_workshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vw3-2Z-l21"/>
+                        <viewControllerLayoutGuide type="bottom" id="TVr-LP-u9E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QB5-L9-HD0">
+                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDJ-HY-0EU">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dF-na-H3l">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="crk-ee-lzA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1dF-na-H3l" secondAttribute="trailing" id="5Xr-M4-d3h"/>
+                                    <constraint firstItem="1dF-na-H3l" firstAttribute="leading" secondItem="iDJ-HY-0EU" secondAttribute="leading" id="KlT-dP-fhw"/>
+                                    <constraint firstAttribute="bottom" secondItem="1dF-na-H3l" secondAttribute="bottom" id="b3c-MG-H1X"/>
+                                    <constraint firstItem="1dF-na-H3l" firstAttribute="top" secondItem="iDJ-HY-0EU" secondAttribute="top" id="lY1-sf-zDf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TVr-LP-u9E" firstAttribute="top" secondItem="iDJ-HY-0EU" secondAttribute="bottom" id="15Q-xk-gzQ"/>
+                            <constraint firstItem="iDJ-HY-0EU" firstAttribute="leading" secondItem="QB5-L9-HD0" secondAttribute="leading" id="5qA-wA-2eE"/>
+                            <constraint firstItem="1dF-na-H3l" firstAttribute="width" secondItem="QB5-L9-HD0" secondAttribute="width" id="ECp-Sr-c51"/>
+                            <constraint firstItem="iDJ-HY-0EU" firstAttribute="top" secondItem="Vw3-2Z-l21" secondAttribute="bottom" id="dt5-il-NuH"/>
+                            <constraint firstAttribute="trailing" secondItem="iDJ-HY-0EU" secondAttribute="trailing" id="mx8-Qp-C5M"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="1dF-na-H3l" id="KQe-Se-hhW"/>
+                        <outlet property="contentViewHeightConstraint" destination="crk-ee-lzA" id="q6w-TA-1CV"/>
+                        <outlet property="scrollView" destination="iDJ-HY-0EU" id="tHb-L9-Dy8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUh-NL-aXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+</document>
