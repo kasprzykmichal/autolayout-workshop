@@ -26,6 +26,7 @@
 		BCA3992D1D3F765E00E6A94A /* Example8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA3992C1D3F765E00E6A94A /* Example8.storyboard */; };
 		BCA3992F1D3F782200E6A94A /* Example9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA3992E1D3F782200E6A94A /* Example9ViewController.swift */; };
 		BCA399311D3F787500E6A94A /* Example9.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA399301D3F787500E6A94A /* Example9.storyboard */; };
+		BCA399331D3F7B0600E6A94A /* Example9TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA399321D3F7B0600E6A94A /* Example9TableViewCell.swift */; };
 		BCDF9DFC1D3EA87D00703493 /* Example2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDF9DFB1D3EA87D00703493 /* Example2.storyboard */; };
 		BCDF9DFE1D3EA99900703493 /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF9DFD1D3EA99900703493 /* Example2ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		BCA3992C1D3F765E00E6A94A /* Example8.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example8.storyboard; sourceTree = "<group>"; };
 		BCA3992E1D3F782200E6A94A /* Example9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example9ViewController.swift; sourceTree = "<group>"; };
 		BCA399301D3F787500E6A94A /* Example9.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example9.storyboard; sourceTree = "<group>"; };
+		BCA399321D3F7B0600E6A94A /* Example9TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example9TableViewCell.swift; sourceTree = "<group>"; };
 		BCDF9DFB1D3EA87D00703493 /* Example2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Example2.storyboard; sourceTree = "<group>"; };
 		BCDF9DFD1D3EA99900703493 /* Example2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 				BC1B58C01D3ED79E00340F36 /* Example7ViewController.swift */,
 				BCA3992A1D3F763700E6A94A /* Example8ViewController.swift */,
 				BCA3992E1D3F782200E6A94A /* Example9ViewController.swift */,
+				BCA399321D3F7B0600E6A94A /* Example9TableViewCell.swift */,
 			);
 			name = Examples;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCA399331D3F7B0600E6A94A /* Example9TableViewCell.swift in Sources */,
 				BC2A44121D3E9C33005D8AB3 /* AppDelegate.swift in Sources */,
 				BC2A44281D3E9C90005D8AB3 /* ExamplesViewController.swift in Sources */,
 				BCA3992B1D3F763700E6A94A /* Example8ViewController.swift in Sources */,

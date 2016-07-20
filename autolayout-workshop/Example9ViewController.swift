@@ -25,6 +25,12 @@ class Example9ViewController: UIViewController {
         RowData(title: "Title 5", description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
     ]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.estimatedRowHeight = 80.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
 }
 
 extension Example9ViewController: UITableViewDataSource {
@@ -37,9 +43,9 @@ extension Example9ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Example9Cell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row].title
-        cell.detailTextLabel?.text = data[indexPath.row].description
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Example9Cell", for: indexPath) as? Example9TableViewCell else { return UITableViewCell() }
+        cell.title?.text = data[indexPath.row].title
+        cell.desc?.text = data[indexPath.row].description
         return cell
     }
 }

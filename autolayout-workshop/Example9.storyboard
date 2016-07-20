@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,32 +19,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6qE-Ts-EqI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6qE-Ts-EqI">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Example9Cell" textLabel="etx-fN-PaW" detailTextLabel="9LG-Nm-Ga3" style="IBUITableViewCellStyleSubtitle" id="vga-BB-Tc7">
-                                        <frame key="frameInset" minY="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Example9Cell" rowHeight="110" id="vga-BB-Tc7" customClass="Example9TableViewCell" customModule="autolayout_workshop" customModuleProvider="target">
+                                        <frame key="frameInset" minY="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vga-BB-Tc7" id="Kim-MJ-EMf">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="etx-fN-PaW">
-                                                    <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmR-x0-VID">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9LG-Nm-Ga3">
-                                                    <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="we3-gb-jMW">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="topMargin" secondItem="QmR-x0-VID" secondAttribute="top" id="1au-VM-Q0c"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="we3-gb-jMW" secondAttribute="leading" id="5TK-FS-nQy"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="QmR-x0-VID" secondAttribute="leading" id="NOQ-D9-IDb"/>
+                                                <constraint firstItem="we3-gb-jMW" firstAttribute="top" secondItem="QmR-x0-VID" secondAttribute="bottom" constant="8" id="NlN-wU-6sf"/>
+                                                <constraint firstItem="we3-gb-jMW" firstAttribute="leading" secondItem="QmR-x0-VID" secondAttribute="trailing" constant="-359" id="ccK-Ja-xTN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="we3-gb-jMW" secondAttribute="bottom" constant="-1" id="ce8-yu-x9I"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="we3-gb-jMW" secondAttribute="trailing" id="d3J-Xf-e1m"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QmR-x0-VID" secondAttribute="trailing" id="erL-jK-U5x"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="desc" destination="we3-gb-jMW" id="KE1-Qm-mTv"/>
+                                            <outlet property="title" destination="QmR-x0-VID" id="eyh-6w-QP4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
