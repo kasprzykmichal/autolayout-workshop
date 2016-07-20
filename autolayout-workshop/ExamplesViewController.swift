@@ -24,7 +24,8 @@ class ExamplesViewController: UIViewController {
         Example(name: "Example 5", description: "Changing Constraints"),
         Example(name: "Example 6", description: "Debugging Auto Layout - Unsatisfiable Layouts"),
         Example(name: "Example 7", description: "Debugging Auto Layout - Ambiguous Layouts"),
-        Example(name: "Example 8", description: "UIScrollView + Auto Layout")
+        Example(name: "Example 8", description: "UIScrollView + Auto Layout"),
+        Example(name: "Example 9", description: "UITableView + Auto Layout")
     ]
 }
 
